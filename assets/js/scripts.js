@@ -13,20 +13,21 @@ form.addEventListener("submit", function (event) {
         alert("Preencha todos os campos.");
         return;
     }
-
+    
     alert("Mensagem enviada com sucesso!");
-
+    
     form.reset();
 });
 
 
-// Adicionando funcionalidade para links temporários, pois não tenho portfólio ainda.
+// Adicionando funcionalidade para links temporários, pois não tenho portfólio ainda
 
 const links = document.querySelectorAll(".temp-link");
 
 links.forEach(link => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
+        
         alert("Sistema Offline");
     });
 });
