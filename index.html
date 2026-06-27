@@ -1,13 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Felipe Rodrigues da Silva</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-    
+    <header class="topbar">
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobremim">SOBRE MIM</a></li>
+                <li><a href="#formacao">FORMAÇÃO</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobremim" class="about">
+        <div class="about-text">
+            <h2>Sobre mim</h2>
+            <p>
+                Profissional de tecnologia orientado à inovação, com experiência na
+                transformação de problemas em soluções digitais de alto impacto.
+                Atuo no desenvolvimento de sistemas, aplicações web e automação de
+                processos, combinando visão técnica, pensamento analítico e foco em
+                geração de valor.
+            </p>
+            <p>
+                Tenho vivência em ambientes de tecnologia e inovação,
+                participando da construção de produtos, prototipação de soluções,
+                melhoria de processos e desenvolvimento de aplicações.
+                Também possuo experiência com métodos ágeis, gestão de produtos e
+                colaboração multidisciplinar.
+            </p>
+            <p>
+                Acredito na tecnologia como ferramenta para simplificar desafios
+                complexos, impulsionar eficiência e criar novas oportunidades.
+                Atualmente, sou Técnico em Desenvolvimento de Sistemas e estudante
+                de Tecnologia em Análise e Desenvolvimento de Sistemas, em constante
+                evolução para atuar na criação de produtos e soluções inovadoras.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/profile.jpg" alt="Foto de Felipe">
+        </div>
+    </section>
+
+    <section id="formacao" class="education">
+        <h2>Formação</h2>
+        <div class="education-content">
+            <div class="education-logo">
+                <img src="assets/images/uninter-logo.png" alt="UNINTER">
+            </div>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                    <p class="institution">
+                        UNINTER - Centro Universitário Internacional
+                    </p>
+                    <span class="year">Concluído em 2025</span>
+                </div>
+                <div class="education-item">
+                    <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="institution">
+                        UNINTER - Centro Universitário Internacional
+                    </p>
+                    <span class="year">
+                        Em andamento • Previsão 2027
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-list">
+            <article class="portfolio-item">
+                <div class="portfolio-info">
+                    <h3>Sistema de Gestão de Padaria</h3>
+                    <p>
+                        Sistema de gestão desenvolvido para padarias, com funcionalidades
+                        de controle de estoque, vendas, relatórios e integração com
+                        sistemas de pagamento.
+                    </p>
+                </div>
+                <div class="portfolio-image">
+                    <a href="#" class="temp-link">
+                        <img src="assets/images/sistema-gestao-padarias.png" alt="Sistema de Gestão de Padarias"></a>
+                </div>
+            </article>
+
+            <article class="portfolio-item">
+                <div class="portfolio-info">
+                    <h3>Sistema de Gestão de Loja de Roupas</h3>
+                    <p>
+                        Sistema de gestão desenvolvido para lojas de roupas, com funcionalidades
+                        de controle de estoque, vendas, relatórios e integração com
+                        sistemas de pagamento.
+                    </p>
+                </div>
+                <div class="portfolio-image">
+                    <a href="#" class="temp-link">
+                        <img src="assets/images/sistema-gestao-de-lojas-de-roupas.png"
+                            alt="Sistema de Gestão de Loja de Roupas">
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="contact-container">
+
+            <div class="contact-text">
+                <h2>Contato</h2>
+                <p>Tem alguma ideia, projeto ou oportunidade? Vamos conversar.</p>
+            </div>
+
+            <div class="contact-card">
+                <form id="contact-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensagem</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
 </body>
 <script src="assets/js/scripts.js"></script>
+
 </html>
