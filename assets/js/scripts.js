@@ -53,7 +53,6 @@ function updateActiveLink() {
   const menuHeight = document.querySelector('.menu').offsetHeight;
   let current = null;
 
-  // If near page bottom, force last section active
   const nearBottom =
     window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
 
@@ -74,6 +73,10 @@ function updateActiveLink() {
 
     const active = document.querySelector(`.menu a[href="#${current}"]`);
     if (active) active.classList.add('active');
+  }
+
+  if (current && window.location.hash !== `#${current}`) {
+    history.replaceState(null, null, `#${current}`);
   }
 }
 
