@@ -19,6 +19,28 @@ form.addEventListener("submit", function (event) {
   form.reset();
 });
 
+// Adicionando funcionalidade para o link ancora ser suave
+
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const menuHeight = document.querySelector('.menu').offsetHeight;
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - menuHeight - 20;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    }
+  });
+});
 
 // Adicionando funcionalidade para links temporários, pois não tenho portfólio ainda
 
